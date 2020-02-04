@@ -158,56 +158,168 @@
   background: url(../../../img/vector.png);
   height: 300px;
   width: 100%;
- display: flex;
- flex-wrap: wrap;
 }
-  .block-tringle2 {
-      
-      position: relative;
-      top: 25px;
-      width: 1140px;
-      margin: 0 auto;
-    filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.5));
-    
-    h2 {
-      background-color: $primary-4;
-      padding: 20px 45px;
-      @include font($primary-3, $font-bold, 36px);
-    }
-.spanred {
-    color: red;
+.get {
+  width: 1144px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
+.part1 {
+  position: relative;
+  top: 20px;
+  width: 720px;
 
-    // @media (max-width: 320px) {
-    //   h1 {
-    //     @include font($primary-3, $font-bold, 24px);
-    //     padding: 10px 20px;
-    //   }
-    //   div {
-    //     border-top: 18px solid $primary-4;
-    //     border-right: 18px solid transparent;
-    //   }
-    // }
-    div {
-      width: 0;
-      height: 0;
-      border-top: 30px solid $primary-4;
-      border-right: 30px solid transparent;
-    }
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+
+  h2 {
+    background-color: $primary-4;
+    padding: 8px 45px;
+    text-transform: uppercase;
+    @include font($primary-3, $font-bold, 36px);
+  }
+  div {
+    width: 0;
+    height: 0;
+    border-top: 30px solid $primary-4;
+    border-right: 30px solid transparent;
   }
 }
+.part2 {
+  position: relative;
+  top: 20px;
+  width: 400px;
+
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+
+  h2 {
+    background-color: $primary-4;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    @include font($primary-3, $font-bold, 22px);
+  }
+  .span1 {
+    font-size: 45px;
+    width: 41px;
+    margin-right: 8px;
+    color: red;
+  }
+  .span2 {
+    font-size: 39px;
+    color: red;
+    margin-right: 9px;
+  }
+  .span3 {
+    font-size: 34px;
+    margin-right: 8px;
+    color: red;
+  }
 }
-.block-tringle3 {
-      
-    //   position: relative;
-      top: 25px;
-      width: 300px;
-      margin: 0 auto;
-    filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.5));
+.flex6 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1125px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.flex6 div {
+  width: 310px;
+  margin: 10px;
+}
+.flex6 p {
+  @include font($base-light, $font-thin, 16px);
+
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+.flex6 input {
+  width: 310px;
+  height: 35px;
+  margin-top: 12px;
+}
+.total1 {
+  width: 95px;
+  align-self: flex-end;
+  @include font($base-light, $font-thin, 16px);
+
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+.total2 {
+  margin-right: 10px;
+  font-size: 36px;
+
+  @include font($base-light, $font-regular, 36px);
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+.total3 {
+  @include font($base-light, $font-thin, 25px);
+}
+.part3 {
+  position: relative;
+  background-color: red;
+  // top: 5px;
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+
+  h3 {
+    background-color: $order-color;
+    padding: 0px 70px;
+    @include font($base-light, $font-thin, 36px);
+  }
+  div {
+    width: 0;
+    height: 0;
+    border-top: 30px solid $primary-4;
+    border-right: 30px solid transparent;
+    // сюда красний трикутник
+  }
+}
+.white {
+  width: 1140px;
+  margin: 0 auto;
+}
+.white1 {
+  
+}
+
+.es1 {
+  margin: 0 auto;
+  position: relative;
+  top: 45px;
+  width: 1140px;
+
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+
+  h2 {
+    background-color: $primary-4;
+    padding: 12px 110px;
+    text-transform: uppercase;
+    @include font($primary-3, $font-bold, 28px);
     
-    h3 {
-      background-color: $primary-4;
-      padding: 20px 45px;
-      @include font($primary-3, $font-bold, 36px);
-    }
+
+text-transform: uppercase;
+  }
+  div {
+    width: 0;
+    height: 0;
+    border-top: 30px solid $primary-4;
+    border-right: 30px solid transparent;
+  }
+}
+.white p {
+  margin-top: 60px;
+  
+height: 103px;
+
+font-family: "Arial Narrow";
+font-size: 18px;
+font-weight: 400;
 }

@@ -1,5 +1,35 @@
-@mixin font($color,$font-face,$size) {
-    color:$color;
-    font-family: $font-face;
-    font-size: $size;
+@mixin font($color, $font-face, $size) {
+  color: $color;
+  font-family: $font-face;
+  font-size: $size;
+}
+@mixin trik {
+  width: 0;
+  height: 0;
+  border-top: 30px solid $primary-3;
+  border-right: 30px solid transparent;
+}
+@mixin toggle {
+  width: 0;
+  height: 0;
+  border-top: 30px solid $primary-3;
+  border-right: 30px solid transparent;
+}
+
+@mixin h2 {
+  @include text(28px, $primary-1, $f-bold);
+  background: $primary-4;
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  padding: 5px 0px;
+}
+
+@mixin shadow {
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+@mixin text($f-size, $color, $f-family) {
+  font-size: $f-size;
+  color: $color;
+  font-family: $f-family;
 }

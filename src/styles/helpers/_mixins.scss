@@ -6,13 +6,13 @@
 @mixin trik {
   width: 0;
   height: 0;
-  border-top: 30px solid $primary-3;
+  border-top: 30px solid $base-light;
   border-right: 30px solid transparent;
 }
 @mixin toggle {
   width: 0;
   height: 0;
-  border-top: 30px solid $primary-3;
+  border-top: 30px solid $primary-4;
   border-right: 30px solid transparent;
 }
 

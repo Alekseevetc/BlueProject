@@ -1,11 +1,15 @@
 .white {
-  width: 1140px;
   background: url(../../../img/Bg_elem1.png) $primary-5 center top;
-  background-color: #f4f6fa;
+
   margin: 0 auto;
 }
+.whitete {
+  // width: 1140px;
+  height: 960px;
+  // margin: 0 auto;
+}
 .white2 {
-  width: 1140px;
+  // width: 1140px;
   margin: 50px auto 0 auto;
   display: flex;
 }
@@ -13,23 +17,19 @@
   width: 25%;
   height: 580px;
   padding: 20px 15px;
+  position: relative;
   .trik {
     @include trik;
-    display: none;
-    margin-left: 30px;
-    margin-top: 30px;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
   }
 }
 .i1:hover {
   transition: 0.1s;
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
   background: $base-light;
-  .trik {
-    @include trik;
-    border-top: 30px solid $base-light;
-    display: block;
-    margin-left: -5px;
-  }
 }
 .k1 {
   display: block;
@@ -58,12 +58,23 @@
   width: 240px;
   margin-left: 20px;
 }
+.ulla {
+  color: black;
+  list-style-type: disc;
+}
 .btn1 {
   width: 120px;
   height: 35px;
   background-color: #075da2;
-
+  color: white;
   margin: 0 auto;
+  padding-top: 5px;
+}
+.bth {
+  margin-top: 6px;
+  margin-left: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .btn1 a {
   text-decoration: none;
@@ -71,10 +82,11 @@
   color: #ffffff;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: 400;
+  margin-top: 15px;
   line-height: 24px;
   text-transform: uppercase;
 }
+
 .b1 {
   margin-top: 130px;
 }
@@ -102,13 +114,13 @@
   margin: 0 auto;
   position: relative;
   top: 45px;
-  width: 1140px;
+  
 
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 
   h2 {
     background-color: $primary-4;
-    padding: 12px 110px;
+    padding: 12px 92px;
     text-transform: uppercase;
     @include font($primary-3, $font-bold, 28px);
 
@@ -129,4 +141,64 @@
 
   font-size: 18px;
   font-weight: 400;
+}
+@media only screen and (max-width: 1050px) {
+  .whitete {
+    height: 700px;
+  }
+  .b1,.b2,.b3,.b4{
+    margin-top: 25px;
+  }
+
+.i1{
+  height: 300px;
+}
+}
+@media only screen and (max-width: 1200px) {
+  .whitete {
+    height: 700px;
+  }
+  .white2 {
+margin-top: 75px;
+  }
+  .b1,.b2,.b3,.b4{
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 870px) {
+.whitete {
+    height: 580px;
+  }
+  .white2 {
+margin-top: 75px;
+  }
+  .b1,.b2,.b3,.b4{
+    margin-top: 25px;
+  }
+.white1 p {
+  display: none;
+}
+}
+@media only screen and (max-width: 991px) {
+  .whitete {
+    height: 610px;
+  }
+  .white1 p {
+  display: none;
+}
+}
+@media only screen and (max-width: 767px) {
+.whitete {
+    height: 500px;
+  }
+  .pblue {
+    display: none;
+  }
+.i1{
+  height: 210px;
+  margin: 5px;
+}
+.es1 span {
+  display: none;
+}
 }

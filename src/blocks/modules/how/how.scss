@@ -3,6 +3,10 @@
   padding: 20px 0px;
   height: 915px;
 }
+.ramka {
+  width: 1200px;
+  margin: 0 auto;
+}
 .title_works {
   margin-bottom: 20px;
   @include shadow;
@@ -137,7 +141,7 @@
   a {
     text-decoration: none;
     padding: 10px 70px;
-    background-color: $base-red;
+    background-color: $order-color;
     text-transform: uppercase;
     @include text(26px, $base-light, $f-reg);
     transition: 0.4s;

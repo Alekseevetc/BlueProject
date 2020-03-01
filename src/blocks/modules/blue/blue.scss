@@ -1,20 +1,25 @@
 .why {
-  margin-top: 70px;
-  width: 100%;
+  // margin-top: 70px;
+  padding-top: 30px;
   height: 560px;
   background-image: url(../../../img/Bg.png);
 }
+.kon {
+  width: 100%;
+  // margin: 0 auto;
+ 
+}
 .how {
   margin: 0 auto;
-  position: relative;
-  top: 45px;
-  width: 1140px;
+  // position: relative;
+  // top: 45px;
+  width: 100%;
 
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 
   h3 {
     background-color: $primary-4;
-    padding: 12px 110px;
+    padding: 12px 10px;
     text-transform: uppercase;
     @include font($primary-3, $font-bold, 28px);
 
@@ -29,17 +34,25 @@
 }
 .why h3 {
   text-align: center;
-  margin-top: 60px;
-  color: white;
+  // margin-top: 60px;
+  color: $primary-2;
 }
-.stat {
+.why h4 {
+  text-align: center;
+  // margin: 0 auto;
+  margin-top: 10px;
+  color: $base-light;
+  font-size: 20px;
+}
+.stat1 {
   display: flex;
-  width: 1110px;
+  // width: 1200px;
   flex-wrap: wrap;
   margin: 10px auto 0 auto;
 }
-.stat div {
-  width: 25%;
+
+.stat1 div {
+  width: 24%;
 
   padding: 20px;
   img {
@@ -54,5 +67,33 @@
     color: white;
     height: 3px;
   }
-
 }
+// @media only screen and (max-width: 950px) {
+//   .why {
+//     // margin-top: 70px;
+//     padding-top: 25px;
+//     height: 800px;
+//     background-image: url(../../../img/Bg.png);
+//   }
+//   .how {
+//     width: 900px;
+//   }
+  
+// }
+@media only screen and (max-width: 769px) {
+  .why {
+    // margin-top: 70px;
+    padding-top: 25px;
+    height: 1000px;
+    background-image: url(../../../img/Bg.png);
+  }
+  .how {
+    
+  }
+}
+@media only screen and (max-width: 963px) {
+  .why{height: 670px}
+  .stat1 div {
+  width: 49%;}
+}
+

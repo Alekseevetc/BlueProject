@@ -1,24 +1,24 @@
 .bgb {
   background: url(../../../img/vector.png);
   height: 300px;
-  width: 100%;
+  // width: 100%;
 }
 .get {
-  width: 1144px;
-  display: flex;
+  // width: 1144px;
+  // display: flex;
   margin: 0 auto;
   justify-content: space-between;
 }
 .part1 {
   position: relative;
   top: 20px;
-  width: 720px;
+  // width: 720px;
 
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 
   h2 {
     background-color: $primary-4;
-    padding: 8px 190px;
+    padding: 8px 90px;
     text-transform: uppercase;
     @include font($primary-3, $font-bold, 36px);
   }
@@ -32,30 +32,30 @@
 .part2 {
   position: relative;
   top: 20px;
-  width: 400px;
+  // width: 400px;
 
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 
   h2 {
     background-color: $primary-4;
-    padding: 2px 15px;
+    padding: 6px 12px;
     text-transform: uppercase;
-    @include font($primary-3, $font-bold, 22px);
+    @include font($primary-3, $font-bold, 20px);
   }
   .span1 {
-    font-size: 45px;
-    width: 41px;
-    margin-right: 8px;
+    font-size: 40px;
+    // width: 41px;
+    margin-right: 4px;
     color: red;
   }
   .span2 {
-    font-size: 39px;
+    font-size: 37px;
     color: red;
-    margin-right: 9px;
+    margin-right: 5px;
   }
   .span3 {
-    font-size: 34px;
-    margin-right: 8px;
+    font-size: 30px;
+    margin-right: 4px;
     color: red;
   }
 }
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1125px;
+  
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -129,4 +129,37 @@
     border-top: 30px solid $order-color;
     border-right: 30px solid transparent;
   }
+}
+@media (max-width: 1200px) {
+  .get {
+    flex-wrap: wrap;
+  }
+  .part2 {
+    margin-top: 15px;
+    margin-left: 10px;
+    padding-bottom: 15px;
+  }
+ .bgb {
+   height: 500px;
+ }
+ .flex6 {
+   flex-wrap: wrap;
+   margin-top: 40px;
+ }
+}
+@media (max-width: 576px) {
+  .bgb {
+   height: 830px;
+ }
+ .part1 h2 {
+   padding: 11px 15px;
+ }
+}
+@media (max-width: 582px) {
+  .bgb {
+   height: 880px;
+ }
+ .part1 h2 {
+   padding: 11px 15px;
+ }
 }

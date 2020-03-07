@@ -1,10 +1,10 @@
-.pay {
+.pay1 {
   background-image: url(../../../img/Rectangle25.png);
-  width: 100%;
+  // width: 100%;
   height: 88px;
 }
 .twoblok {
-  width: 1150px;
+  // width: 1150px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -19,4 +19,20 @@
 }
 .ps,.setki {
  margin-top: 22px;
+}
+
+@media (max-width: 990px) {
+  .pay1 {
+    height: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pay1 {
+    height: 0px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .pay1 {
+    height: 0px;
+  }
 }

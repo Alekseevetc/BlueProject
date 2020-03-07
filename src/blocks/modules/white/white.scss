@@ -164,6 +164,9 @@ margin-top: 75px;
   .b1,.b2,.b3,.b4{
     margin-top: 25px;
   }
+  .i1{
+  height: 300px;
+}
 }
 @media only screen and (max-width: 870px) {
 .whitete {
@@ -179,7 +182,7 @@ margin-top: 75px;
   display: none;
 }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
   .whitete {
     height: 610px;
   }
@@ -187,7 +190,7 @@ margin-top: 75px;
   display: none;
 }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 .whitete {
     height: 500px;
   }
